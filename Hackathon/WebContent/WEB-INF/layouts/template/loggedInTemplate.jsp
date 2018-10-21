@@ -5,6 +5,28 @@
 
 <style>
 
+	.charts > div {
+            width: 560px;
+            height: 470px;
+            padding: 0 15px;
+            margin: 5px;
+            border-radius: 10px;
+            background-color: rgb(245, 245, 245);
+            float: left;
+        }
+
+         .charts > div > button {
+             margin-top: 15px;
+         }
+
+         .charts > div > div {
+             margin: 15px 0;
+         }
+
+     h1, h2 {
+         padding-left: 15px;
+     }
+
 	.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
 		  background-color: #696969;
 	}
@@ -33,14 +55,14 @@
 	.form-horizontal {
 		min-height: 70%;
 		width: 100%;
-		padding: 19px;
+		padding: 10px;
 		position: relative;
 		
 		background: rgba(0, 0, 0, 0.6);
-		margin-bottom: 80px;
+		margin-bottom: 60px;
 		padding-bottom: 20px;
 		border: 1px solid #464646;
-		border-radius: 4px;
+		border-radius: 2px;
 		-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 		box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 	}

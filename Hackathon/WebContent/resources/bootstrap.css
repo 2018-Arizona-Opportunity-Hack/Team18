@@ -5612,14 +5612,15 @@ body.modal-open,
 
 .modal {
   position: fixed;
-  top: 0;
+  top: 50%;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 50%;
   z-index: 1040;
   display: none;
   overflow: auto;
   overflow-y: scroll;
+  padding-right: 45px;
 }
 
 .modal.fade .modal-dialog {
@@ -5630,6 +5631,7 @@ body.modal-open,
      -moz-transition: -moz-transform 0.3s ease-out;
        -o-transition: -o-transform 0.3s ease-out;
           transition: transform 0.3s ease-out;
+          margin-right: 45px;
 }
 
 .modal.in .modal-dialog {

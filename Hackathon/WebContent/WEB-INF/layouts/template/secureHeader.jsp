@@ -59,20 +59,29 @@
 					<%
 						}
 					%>
+					
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dashboard <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li><a href="<c:url value="/dashboard/main" />">View Data Sets</a></li>
+							<li><a href="<c:url value="/upload/uploadtable" />">Upload Data Set</a></li>
+							<li><a href="<c:url value="/dynamic/displayInputForm?tableName=humans" />">Add Input</a></li>
+					
+						</ul>
+					</li>
+					
+					<!-- <li><a href="<c:url value="/dynamic/getdataset" />">Get DataSet</a></li>-->
+					
+					<!--<li><a href="<c:url value="/dynamic/analysis" />">Analysis</a></li>-->
+					
+
 				</ul>
 				
 				
 
 				<!--Search form start -->
 				<!-- method="POST" action="search" -->
-				<form:form method="POST" action="${pageContext.request.contextPath}/search/securesearch" modelAttribute="search" class="navbar-form navbar-left" role="search">
-					<div class="input-group">
-				        <form:input type="text" class="form-control" placeholder="Search" path="search"></form:input>
-					    <span class="input-group-btn">
-	                        <input type="submit" value="Search" class="btn btn-default" />
-	                    </span>
-				    </div>
-				</form:form>
+
 				<!--Search form end -->
 
 				
